@@ -12,8 +12,8 @@ goto ask
 
 :ask
 set /P ans="Do You Want To Download File Now?(y/n)"
-if %ans%="y" (goto update)
-if %ans%="n" (exit /B)
+if %ans%=="y" (goto update)
+if %ans%=="n" (exit /B)
 echo Please type y or n.
 goto ask
 
@@ -52,9 +52,9 @@ goto check1
 
 :ok
 set /P laun="What Do You Want To Do?(l=launch/u=update/s=Set Command and Repeat Time/ul=Update Launcher):"
-if %laun%=l (cd %USERPROFILE%/wcr & start wcr.bat & exit /B)
-if %laun%=u (goto update)
-if %laun%=s (goto cfgset)
-if %laun%=ul (cd %USERPROFILE%/wcr & start updater.bat & exit /B)
+if %laun%==l (cd %USERPROFILE%/wcr & start wcr.bat & exit /B)
+if %laun%==u (goto update)
+if %laun%==s (goto cfgset)
+if %laun%==ul (cd %USERPROFILE%/wcr & start updater.bat & exit /B)
 echo Please Type l or u or s or ul.
 goto ok
