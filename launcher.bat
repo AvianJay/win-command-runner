@@ -34,6 +34,7 @@ set /P com="Input command:"
 echo %com% > %USERPROFILE%/wcr/com.cfg
 set /P resec="Repeat times:"
 echo %resec% > %USERPROFILE%/wcr/resec.cfg
+goto check1
 
 :update
 echo Updateing...
