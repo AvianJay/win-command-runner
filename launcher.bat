@@ -1,5 +1,5 @@
 @echo off
-title Windows command Runner
+title Windows command Runner Launcher
 
 :check
 echo checking...
