@@ -21,7 +21,7 @@ set l="%SystemDrive%\Program Files (x86)\Windows Command Runner\"
 %SystemDrive%
 if %l%=="" (
 echo Can't find launcher folder.
-set /p l=Please Type launcher folder.EX:"C:\Program Files (x86)\AvianCmd"
+set /p l=Please Type launcher folder.EX:"C:\Program Files (x86)\Windows Command Runner"
 )
 %SystemDrive%
 cd %l%
