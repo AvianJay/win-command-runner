@@ -11,9 +11,9 @@ echo Some File Missing...
 goto ask
 
 :ask
-set /P ans="Do You Want To Download File Now?(y/n)"
-if %ans%=="y" (goto update)
-if %ans%=="n" (exit /B)
+set /P ans=Do you want to download now?(y/n)
+if %ans%==y (goto update)
+if %ans%==n (exit)
 echo Please type y or n.
 goto ask
 
