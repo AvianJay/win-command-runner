@@ -49,7 +49,7 @@ curl https://raw.githubusercontent.com/AvianJay/win-command-runner/main/wcr.bat 
 curl https://raw.githubusercontent.com/AvianJay/win-command-runner/main/updater.bat --output updater.bat
 echo Updated.Ready to Check.
 ping 127.0.0.1 -n 1 -w 1000 > nul
-goto check1
+goto check
 
 :ok
 set /P laun="What Do You Want To Do?(l=launch/u=update/s=Set Command and Repeat Time/ul=Update Launcher):"
