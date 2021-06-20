@@ -4,6 +4,7 @@ set /P resec=<resec.cfg
 title Windows Command Runner
 
 :re
+cls
 %com%
 ping 127.0.0.1 -n %resec% -w 1000 > nul
 goto re
